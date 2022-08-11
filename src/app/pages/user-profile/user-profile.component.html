@@ -88,13 +88,13 @@
                 <div class="col-lg-6">
                   <div class="form-group">
                     <label class="form-control-label" for="input-username">Username</label>
-                    <input #username [disabled]="val" type="text" id="input" class="form-control form-control-alternative" placeholder="Username" >
+                    <input #username [disabled]="val" type="text" id="input" class="form-control form-control-alternative" placeholder="Username" [value]="user.username" >
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="form-group">
                     <label class="form-control-label" for="input-email">Email address</label>
-                    <input #email [disabled]="val" type="email" id="input-email" class="form-control form-control-alternative" placeholder="..@example.com">
+                    <input #email [disabled]="val" type="email" id="input-email" class="form-control form-control-alternative" placeholder="..@example.com" [value]="user.email">
                   </div>
                 </div>
               </div>
@@ -102,13 +102,13 @@
                 <div class="col-lg-6">
                   <div class="form-group">
                     <label class="form-control-label" for="input-first-name">First name</label>
-                    <input #first_name [disabled]="val" type="text" id="input-first-name" class="form-control form-control-alternative" placeholder="First name" value="Lucky">
+                    <input #first_name [disabled]="val" type="text" id="input-first-name" class="form-control form-control-alternative" placeholder="First name" [value]="user.first_name">
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="form-group">
                     <label class="form-control-label" for="input-last-name">Last name</label>
-                    <input #last_name [disabled]="val" type="text" id="input-last-name" class="form-control form-control-alternative" placeholder="Last name" value="Jesse">
+                    <input #last_name [disabled]="val" type="text" id="input-last-name" class="form-control form-control-alternative" placeholder="Last name" [value]="user.last_name">
                   </div>
                 </div>
               </div>
@@ -121,7 +121,7 @@
                 <div class="col-md-12">
                   <div class="form-group">
                     <label class="form-control-label" for="input-address">Address</label>
-                    <input #address [disabled]="val" id="input-address" class="form-control form-control-alternative" placeholder="Home Address" value="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09" type="text">
+                    <input #address [disabled]="val" id="input-address" class="form-control form-control-alternative" placeholder="Home Address" [value]="user.address" type="text">
                   </div>
                 </div>
               </div>
@@ -129,19 +129,19 @@
                 <div class="col-lg-4">
                   <div class="form-group">
                     <label class="form-control-label" for="input-city">City</label>
-                    <input #city [disabled]="val" type="text" id="input-city" class="form-control form-control-alternative" placeholder="City" value="New York">
+                    <input #city [disabled]="val" type="text" id="input-city" class="form-control form-control-alternative" placeholder="City" value="user.city">
                   </div>
                 </div>
                 <div class="col-lg-4">
                   <div class="form-group">
                     <label class="form-control-label" for="input-country">Country</label>
-                    <input #country [disabled]="val" type="text" id="input-country" class="form-control form-control-alternative" placeholder="Country" value="United States">
+                    <input #country [disabled]="val" type="text" id="input-country" class="form-control form-control-alternative" placeholder="Country" value="user.country">
                   </div>
                 </div>
                 <div class="col-lg-4">
                   <div class="form-group">
                     <label class="form-control-label" for="input-country">Postal code</label>
-                    <input #postal_code [disabled]="val" type="number" id="input-postal-code" class="form-control form-control-alternative" placeholder="Postal code">
+                    <input #postal_code [disabled]="val" type="number" id="input-postal-code" class="form-control form-control-alternative" placeholder="Postal code" [value]="user.postal_code">
                   </div>
                 </div>
               </div>
@@ -152,7 +152,7 @@
             <div class="pl-lg-4">
               <div class="form-group">
                 <label>About Me</label>
-                <textarea #about_me rows="4" class="form-control form-control-alternative" placeholder="A few words about you ..." [disabled]="val" >A beautiful Dashboard for Bootstrap 4. It is Free and Open Source.</textarea>
+                <textarea #about_me rows="4" class="form-control form-control-alternative" placeholder="A few words about you ..." [disabled]="val" >{{user.about_me}}</textarea>
               </div>
             </div>
           </form>

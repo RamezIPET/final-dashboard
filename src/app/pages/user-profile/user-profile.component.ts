@@ -10,10 +10,9 @@ export class UserProfileComponent implements OnInit {
 
   user:any
   constructor(private profile: UserProfileService) { 
-    this.profile.getuser("ALP9mYiMwZkxIG3k9olc").subscribe(user => this.user = user)
+    this.profile.getuser("322UXfoogamGrD3IWYYv").subscribe(user => this.user = user)
    }
   ngOnInit() {
-    
   }
 
 
