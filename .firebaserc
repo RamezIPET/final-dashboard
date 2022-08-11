@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "fire-forest-d9e0b": {
+      "hosting": {
+        "argon-dashboard-angular": [
+          "fire-forest-d9e0b"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "fire-forest-d9e0b"
+  }
+}
